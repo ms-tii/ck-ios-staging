@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Text-Medium.ttf">
+            <string>SFProText-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SessionTaskListTableViewCell" rowHeight="40" id="KGk-i7-Jjw" customClass="SessionTaskListTableViewCell" customModule="CareKernel" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="358" height="40"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="358" height="40"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GpI-8D-fwG">
+                        <rect key="frame" x="26" y="12" width="245" height="17"/>
+                        <fontDescription key="fontDescription" name="SFProText-Medium" family="SF Pro Text" pointSize="14"/>
+                        <color key="textColor" name="Client Profile heading font"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle" translatesAutoresizingMaskIntoConstraints="NO" id="KK2-nK-E35">
+                        <rect key="frame" x="313" y="8" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="4aD-UL-tjp"/>
+                            <constraint firstAttribute="width" constant="25" id="pxI-Kx-D9j"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P9E-co-oXx">
+                        <rect key="frame" x="313" y="8" width="25" height="25"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain"/>
+                        <connections>
+                            <action selector="tickButtonAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="6Fd-aA-kIy"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" name="Home calendertable cell"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="GpI-8D-fwG" secondAttribute="bottom" constant="11" id="7gl-hL-g8k"/>
+                    <constraint firstItem="KK2-nK-E35" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="8So-CE-p0A"/>
+                    <constraint firstItem="GpI-8D-fwG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="26" id="Byu-Hw-6n6"/>
+                    <constraint firstAttribute="trailing" secondItem="KK2-nK-E35" secondAttribute="trailing" constant="20" symbolic="YES" id="GeR-BI-dj4"/>
+                    <constraint firstItem="P9E-co-oXx" firstAttribute="height" secondItem="KK2-nK-E35" secondAttribute="height" id="K86-Ko-pSW"/>
+                    <constraint firstItem="P9E-co-oXx" firstAttribute="width" secondItem="KK2-nK-E35" secondAttribute="width" id="Uy0-yu-cNK"/>
+                    <constraint firstItem="KK2-nK-E35" firstAttribute="leading" secondItem="GpI-8D-fwG" secondAttribute="trailing" constant="42" id="W79-Ws-FZ4"/>
+                    <constraint firstItem="P9E-co-oXx" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="bsZ-oE-4k2"/>
+                    <constraint firstItem="KK2-nK-E35" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="n90-gH-eBK"/>
+                    <constraint firstItem="P9E-co-oXx" firstAttribute="trailing" secondItem="KK2-nK-E35" secondAttribute="trailing" id="pXV-RV-Q6j"/>
+                    <constraint firstItem="P9E-co-oXx" firstAttribute="leading" secondItem="KK2-nK-E35" secondAttribute="leading" id="uOQ-FP-sFC"/>
+                    <constraint firstItem="GpI-8D-fwG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="yeP-Nv-8oc"/>
+                    <constraint firstAttribute="bottom" secondItem="KK2-nK-E35" secondAttribute="bottom" constant="7" id="ynR-Sb-N2E"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="taskNameLabel" destination="GpI-8D-fwG" id="wLk-OM-xr1"/>
+                <outlet property="tickButton" destination="P9E-co-oXx" id="elC-uo-iSI"/>
+                <outlet property="tickImageView" destination="KK2-nK-E35" id="5z4-iM-tCs"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="54.910714285714285"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="circle" width="15" height="15"/>
+        <namedColor name="Client Profile heading font">
+            <color red="0.30980392156862746" green="0.31764705882352939" blue="0.32156862745098042" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Home calendertable cell">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
